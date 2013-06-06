@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="7">
+    <author>Chewbee</author>
+    <version>1.0</version>
+    <title>
+        <en>Attachment point for groomers winch</en>
+        <de>Befestigungspunkt für Pistenraupen Winde</de>
+		<fr>Point d'accroche pour dameuses à treuil</fr>
+    </title>
+    <description>
+        <en>have these items on top of the slopes so you can hang the winch to work</en>
+        <de>wurden diese Gegenstände auf den Pisten so können Sie hängen die Winde zu arbeiten</de>
+		<fr>disposez ces  points en haut des pentes afin de vous y accrocher pour travailler au treuil</fr>
+    </description>
+    <iconFilename>store.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+	<l10n>
+        <text name="TabPlaceables">
+            <en>Switch to placeable objects</en>
+            <de>Zu platzierbaren Objekten wechseln</de>
+            <fr>Changer pour les objets pouvant être placés</fr>
+            <pl>Przełącz na obiekty, które można swobodnie rozmieszczać</pl>
+        </text>
+    </l10n>
+	
+	<extraSourceFiles>
+        <sourceFile filename="scripts/ShopScreen.lua"/>
+        <sourceFile filename="scripts/PlacementScreen.lua"/>
+        <sourceFile filename="scripts/BuyPlaceableEvent.lua"/>
+        <sourceFile filename="scripts/SellPlaceableEvent.lua"/>
+        <sourceFile filename="scripts/Placeable.lua"/>
+    </extraSourceFiles>
+
+
+    <specializations>
+        <specialization name="placeable" className="Placeable" filename="scripts/Placeable.lua"/>
+    </specializations>
+	
+	 <vehicleTypes>
+        <type name="snowGroomerAttachPointPlaceable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="placeable" />
+			<specialization name="attachable" />
+        </type>
+    </vehicleTypes>                 
+	
+    <storeItems>
+        <storeItem>
+			<fr>
+				<name>Point d'accroche pour dameuses à treuil</name>
+                <description><![CDATA[disposez ces  points en haut des pentes afin de vous y accrocher pour travailler au treuil
+				
+				Les scripts de placement et d'attaches sont copyright de Giants software
+				Cet objet peut être placé librement sur la carte.
+				]]></description>
+				<specs><![CDATA[Moddé par Chewbee]]></specs>
+			</fr>
+            <en>
+                <name>Attachment point for groomers winch</name>
+                <description><![CDATA[have these items on top of the slopes so you can hang the winch to work
+				Scripts areCopyrighted Giants software
+				This object can be freely placed on map
+				]]></description>
+				<specs><![CDATA[Modded by chewbee]]></specs> 
+            </en>
+            <de>
+                <name>Befestigungspunkt für Pistenraupen Winde</name>
+                <description><![CDATA[wurden diese Gegenstände auf den Pisten so können Sie hängen die Winde zu arbeiten
+				Scripts unterliegen dem Urheberrecht Giants Software
+				]]></description>
+				<specs><![CDATA[GroomersAttachPoint]]></specs>
+            </de>
+            <rotation>0</rotation>
+            <image active="store.dds" brand="brand.dds"/>
+            <price>100</price>
+            <xmlFilename>GroomersAttachPoint.xml</xmlFilename>
+			<brand>Chewbee</brand>
+			<dailyUpkeep>10</dailyUpkeep>
+			<machineType>barrel</machineType>
+			<species>placeable</species>
+            <section>section_tools</section>
+        </storeItem>
+	</storeItems>
+</modDesc>

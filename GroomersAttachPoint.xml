@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="snowGroomerAttachPointPlaceable">
+	<annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <name>
+        <en>GroomersAttachPoint</en>
+        <de>GroomersAttachPoint</de>
+    </name>
+	
+	<typeDesc>$l10n_TypeDesc_Weight</typeDesc>
+	
+    <filename>GroomersAttachPointLarge.i3d</filename>
+	
+	<wheels autoRotateBackSpeed="2.5">
+    </wheels>
+
+
+    <placement testSizeX="1" testSizeZ="1" sizeX="2" sizeZ="2" useRandomYRotation="false" useManualYRotation="true" />
+	
+    <size width="1.5" length="1.0" />
+
+    <attacherJoint index="0>0" jointType="implement" allowsJointLimitMovement="false" allowsLowering="false" rotLimitScale="0 0 0 "/>
+    
+	<needsLowering value="false" />
+    
+	<components count="1">
+        <component1 centerOfMass="0 0 0" solverIterationCount="4" />
+    </components>
+</vehicle>
