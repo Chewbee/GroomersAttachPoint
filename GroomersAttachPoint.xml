@@ -8,7 +8,7 @@
 	
 	<typeDesc>$l10n_TypeDesc_Weight</typeDesc>
 	
-    <filename>GroomersAttachPointLarge.i3d</filename>
+    <filename>GroomersAttachPoint.i3d</filename>
 	
 	<wheels autoRotateBackSpeed="2.5">
     </wheels>
