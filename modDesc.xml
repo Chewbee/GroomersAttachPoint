@@ -30,12 +30,13 @@
         <sourceFile filename="scripts/BuyPlaceableEvent.lua"/>
         <sourceFile filename="scripts/SellPlaceableEvent.lua"/>
         <sourceFile filename="scripts/Placeable.lua"/>
+		<sourceFile filename="scripts/attacher.lua"/>
     </extraSourceFiles>
 
 
     <specializations>
         <specialization name="placeable" className="Placeable" filename="scripts/Placeable.lua"/>
-    </specializations>
+	</specializations>
 	
 	 <vehicleTypes>
         <type name="snowGroomerAttachPointPlaceable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
